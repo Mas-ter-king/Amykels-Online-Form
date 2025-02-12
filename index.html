@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Amykels Culinary Academy Form</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo" style="position: relative;">
+                <img src="img/logo.jpg">
+             </div>
+
+            <div class="academy_name">
+                <h1>AMYKELS CULINARY ACADEMY</h1>
+            </div>
+
+            <div class="nav_links" id="navLinks">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#enroll">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <!-- Slideshow images -->
+    <div class="container_slide">
+    <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="img/culinary logo.jpg" alt="Image 1">
+        </div>
+        <div class="slides fade">
+            <img src="img/slide4.jfif" alt="Image 2">
+        </div>
+        <div class="slides fade">
+            <img src="img/slide3.jpg" alt="Image 3">
+        </div>
+        <div class="slides fade">
+            <img src="img/testimonial2.jpg" alt="Image 4">
+        </div>
+        <div class="slides fade">
+            <img src="img/testimonial1.jpg" alt="Image 5">
+        </div>
+        <div class="slides fade">
+            <img src="img/testimonial3.jpg" alt="Image 6">
+        </div>
+        <div class="slides fade">
+            <img src="img/slide2.jpg" alt="Image 7">
+        </div>
+
+        <!-- Next and Previous buttons -->
+        <button class="prev" onclick="changeSlide(-1)">&#10095;</button>
+        <button class="next" onclick="changeSlide(1)">&#10094;</button>
+    </div>
+</div>
+
+
+
+    <!-- ABOUT THE SCHOOL -->
+    <div id="about">
+        <div class="quote">
+            <h2>HOW WE STARTED</h2>
+            <P> Amykels Baking and Culinary Academy was founded in 2016 with 6 students composed of 5 girls and a boy with Mrs Amarachukwu Okafor as the teacher,  principal and proprietor.
+                The school started with short course, students get enrolled and are trained for 1-3 months and they are done.<br>
+                In the year 2018, more people started gaining interest to acquire baking skills, then Mrs Amarachukwu Okafor introduced more courses and extended the training period to 6 months/ 1 year. 
+                This made the school to gain more students. From the year 2018 – 2022 the school have produced over 150 professional chefs in pastries & cookeries.<br>
+                <br> In the year 2023, we started having our vendors support and encouragement on our students during their graduation with lots of gift items just to encourage them. <br>
+                Our graduates are scattered all over the nation and they are doing great.<br>
+            </P>
+        </div>
+        <div class="quote_img">
+            <h2 style="visibility: hidden;">HOW WE STARTED</h2>
+            <img src="img/quote_image.jpg" alt="image">
+        </div>
+    </div>
+
+
+<!-- testimonial section -->
+<div class="testimonials"> 
+    <div class="terstimonials-colums"> 
+        <h2 style="text-align: center;color:var(--primary); text-decoration: underline;">TESTIMONIALS</h2> 
+        <img src="img/testimonial1.jpg" height="300px" width="300px"> <br>
+        <h3 style="text-align: center;color:rgb(43, 1, 1);">OGOCHUKWU</h3>
+        <P>My experience with Amykels has been amazing, 
+        there were so many things i thought i knew but i really didn't. <br>
+        I like how we're not just learning about food, 
+        we're learning about the science behind food, bakery and decoration.</P>
+    </div>
+    <div class="terstimonials-colums">
+        <h2 style="text-align: center;color:var(--primary); visibility: hidden;">TESTIMONIALS</h2> 
+        <img src="img/testimonial2.jpg" height="300px" width="300px"><br>
+        <h3 style="text-align: center;color:rgb(43, 1, 1);">OLUCHUKWU</h3>
+        <P>I took the bold step to get baking and culinary studies at Amykels Academy, Anambra. <br>
+        This opened my eyes, mind and world to this side of life and officially welcomed me to this beautiful part of the world. <br>
+        My total respect goes to Okafor Amarachukwu whose passion for the culinary world influenced me so much <br>
+        and is a daily reminder of where I need to be and what I need to do.</P>
+    </div>
+    <div class="terstimonials-colums">
+        <h2 style="text-align: center;color:darkred; visibility: hidden;">TESTIMONIALS</h2>
+        <img src="img/testimonial3.jpg" height="300px" width="300px"><br>
+        <h3 style="text-align: center;color:rgb(43, 1, 1);">CHINECHEREM</h3>
+        <P>Kicking off my passion for baking in 2021 with the experience with Amykels instructors was not an easy journey.<br>
+            Being away from home over a year now has shown me it was indeed worthwhile. But in the end, it does worth it</P>
+    </div>
+</div>
+
+
+    <!--Form Registration-->
+    <h1 style="color: darkred; text-align: center; margin-top: 50px;">ONLINE APPLICATION</h1>
+    <section id="enroll">
+    <div class="form_container">
+        <h2>Apply for a Course</h2>
+        <p>&#128077;</p>
+        <form action="submit.php" method="POST" enctype="multipart/form-data">
+            <label for="name"> <i style="color: orange;">*</i> Full Name:</label>
+            <input type="text" name="name" required>
+            
+            <label for="email"><i style="color: orange;">*</i>Email:</label>
+            <input type="email" name="email" required>
+            
+            <label for="gender"> <i style="color: orange;">*</i>Gender:</label>
+            <select name="gender" id="gender">
+                <option value="" disabled selected>Choose your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        
+            <label for="course-duration"><i style="color: orange;">*</i> Select Course and Duration:</label>
+            <select name="course_duration" id="course-duration" required>
+                <option value="" disabled selected>Select a course and duration</option>
+                <optgroup label="Baking">
+                    <option value="Baking - 3 months">3 months</option>
+                    <option value="Baking - 6 months">6 months</option>
+                    <option value="Baking - 9 months">9 months</option>
+                </optgroup>
+                <optgroup label="Culinary Arts">
+                    <option value="Culinary Arts - 3 months">3 months</option>
+                    <option value="Culinary Arts - 6 months">6 months</option>
+                    <option value="Culinary Arts - 9 months">9 months</option>
+                </optgroup>
+            </select>
+            
+            <label for="message">Additional Message:</label>
+            <textarea name="message" rows="4" placeholder="Leave us a message"></textarea>
+            
+            <label for="passport"><i style="color: orange;">*</i> Upload Passport Photograph:</label>
+            <input type="file" name="passport" accept="image/*" required>
+            
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+    
+    <div class="contact">
+            <div class="contact_address">
+                <h2>Address</h2>
+                <p>
+                    No. 13 River Line Street <br>
+                    Abata Nsugbe, <br>
+                    Anambra State.
+                    <a href="https://maps.app.goo.gl/cHnyjWPiy6sBBn2KA" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                </p>
+            </div>
+
+            <div class="contact_links">
+                <h2>Socials</h2>
+                <div class="wa">
+                <a href="https://wa.me/23408109207180" target="_blank"> 
+                    <i class="fab fa-whatsapp" style="font-size: 24px;"></i> WhatsApp
+                </a></div>
+
+                <div class="face">
+                <a href="https://facebook.com/yourusername" target="_blank">
+                    <i class="fab fa-facebook" style="font-size: 24px;"></i> Facebook
+                </a></div>
+                   
+                <div class="ins">
+                <a href="https://instagram.com/yourusername" target="_blank">
+                    <i class="fab fa-instagram" style="font-size: 24px;"></i> Instagram
+                </a></div>
+
+            </div>
+    </div>
+</section>
+
+<!-- Footer section -->
+
+    <p class="copyright">
+        &copy copyright 2025 AMYKELS BAKING & CULINARY ACADEMY. All Rights Reserved
+    </p>
+
+    <!-- scroll up -->
+    <a href="#" id="scrollToTopBtn" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
