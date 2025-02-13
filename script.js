@@ -49,10 +49,17 @@ document.addEventListener("DOMContentLoaded", function () {
 // Toggle the "show" class on nav-links when the hamburger icon is clicked
 
 document.addEventListener("DOMContentLoaded", function () {
-    let hamburger = document.getElementById("hamburger");
-    let navLinks = document.getElementById("navLinks");
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    const closeBtn = document.getElementById("closeBtn");
 
+    // Open the menu when hamburger is clicked
     hamburger.addEventListener("click", function () {
-        navLinks.classList.toggle("show");
+      navLinks.classList.add("show");
     });
-});
+
+    // Close the menu when close button (❌) is clicked
+    closeBtn.addEventListener("click", function () {
+      navLinks.classList.remove("show");
+    });
+  });
